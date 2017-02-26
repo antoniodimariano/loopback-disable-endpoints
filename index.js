@@ -4,25 +4,25 @@
 
 
 exports.disableAll = function(modelName) {
-    modelName.disableRemoteMethod("create", true);
-    modelName.disableRemoteMethod("upsert", true);
-    modelName.disableRemoteMethod("updateAll", true);
-    modelName.disableRemoteMethod("updateAttributes", false);
-    modelName.disableRemoteMethod("find", true);
-    modelName.disableRemoteMethod("findById", true);
-    modelName.disableRemoteMethod("findOne", true);
-    modelName.disableRemoteMethod("deleteById", true);
-    modelName.disableRemoteMethod("confirm", true);
-    modelName.disableRemoteMethod("count", true);
-    modelName.disableRemoteMethod("exists", true);
-    modelName.disableRemoteMethod("resetPassword", true);
-    modelName.disableRemoteMethod('__count__accessTokens', false);
-    modelName.disableRemoteMethod('__create__accessTokens', false);
-    modelName.disableRemoteMethod('__delete__accessTokens', false);
-    modelName.disableRemoteMethod('__destroyById__accessTokens', false);
-    modelName.disableRemoteMethod('__findById__accessTokens', false);
-    modelName.disableRemoteMethod('__get__accessTokens', false);
-    modelName.disableRemoteMethod('__updateById__accessTokens', false);
-    modelName.disableRemoteMethod('createChangeStream', true);
-    console.log("[BOOT SETUP] all the API endpoints for Model ",modelName.definition.name+" has been disabled");
+    modelName.disableRemoteMethodByName("create", true);
+    modelName.disableRemoteMethodByName("upsert", true);
+    modelName.disableRemoteMethodByName("updateAll", true);
+    modelName.disableRemoteMethodByName("updateAttributes", false);
+    modelName.disableRemoteMethodByName("find", true);
+    modelName.disableRemoteMethodByName("findById", true);
+    modelName.disableRemoteMethodByName("findOne", true);
+    modelName.disableRemoteMethodByName("deleteById", true);
+    modelName.disableRemoteMethodByName("confirm", true);
+    modelName.disableRemoteMethodByName("count", true);
+    modelName.disableRemoteMethodByName("exists", true);
+    modelName.disableRemoteMethodByName("resetPassword", true);
+    modelName.disableRemoteMethodByName('__count__accessTokens', false);
+    modelName.disableRemoteMethodByName('__create__accessTokens', false);
+    modelName.disableRemoteMethodByName('__delete__accessTokens', false);
+    modelName.disableRemoteMethodByName('__destroyById__accessTokens', false);
+    modelName.disableRemoteMethodByName('__findById__accessTokens', false);
+    modelName.disableRemoteMethodByName('__get__accessTokens', false);
+    modelName.disableRemoteMethodByName('__updateById__accessTokens', false);
+    modelName.disableRemoteMethodByName('createChangeStream', true);
+    console.log("[BOOT SETUP] all the defaults API endpoints for Model ",modelName.definition.name+" has been disabled");
 }
