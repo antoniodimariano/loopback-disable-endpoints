@@ -13,22 +13,22 @@ npm install loopback-disable-endpoints
 
 In a boot script, include to disable all endpoints
 
-     var endpoint-disabler = require('loopback-endpoint-disabler');
+     var endpoint-disabler = require('loopback-disable-endpoints');
      endpoint-disabler.disableAll(server.models.MyModel);
      
      
 To enable Read-only endpoints
     
-     var endpoint-disabler = require('loopback-endpoint-disabler');
+     var endpoint-disabler = require('loopback-disable-endpoints');
     endpoint-disabler.enableReadOnly(server.models.MyModel);
 
 
 To enable Write-only endpoints 
     
-     var endpoint-disabler = require('loopback-endpoint-disabler');
+     var endpoint-disabler = require('loopback-disable-endpoints');
     endpoint-disabler.enableWriteOnly(server.models.MyModel);
 
 To disable endpoints for related model 
 
-     var endpoint-disabler = require('loopback-endpoint-disabler');
+     var endpoint-disabler = require('loopback-disable-endpoints');
     endpoint-disabler.disableRelatedModels(server.models.MyModel);
