@@ -9,9 +9,26 @@ This simply utility disables them leaving user's custom remote methods only.
 
 loopback.io version 3.x is required.
 
-npm install endpoint-disabler
+npm install loopback-disable-endpoints
 
-In a boot script, include
+In a boot script, include to disable all endpoints
 
-     var endpoint-disabler = require('endpoint-disabler');
+     var endpoint-disabler = require('loopback-endpoint-disabler');
      endpoint-disabler.disableAll(server.models.MyModel);
+     
+     
+To enable Read-only endpoints
+    
+     var endpoint-disabler = require('loopback-endpoint-disabler');
+    endpoint-disabler.enableReadOnly(server.models.MyModel);
+
+
+To enable Write-only endpoints 
+    
+     var endpoint-disabler = require('loopback-endpoint-disabler');
+    endpoint-disabler.enableWriteOnly(server.models.MyModel);
+
+To disable endpoints for related model 
+
+     var endpoint-disabler = require('loopback-endpoint-disabler');
+    endpoint-disabler.disableRelatedModels(server.models.MyModel);

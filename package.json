@@ -1,6 +1,6 @@
 {
   "name": "endpoint-disabler",
-  "version": "1.0.1",
+  "version": "1.0.1npm unpli",
   "description": "utility to disable public endpoints in the loopback.io framework.",
   "main": "index.js",
   "scripts": {
