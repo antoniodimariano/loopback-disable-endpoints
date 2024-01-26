@@ -1,6 +1,6 @@
 Simply utility to disable default endpoints defined for a Model in the loopback.io framework.
 
-###What is it?
+### What is it?
 
 The loopback.io comes with full RESTful APIs endpoints enables by default.
 This simply utility disables them leaving user's custom remote methods only.
